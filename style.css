@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 }
 
 
-:root{
+:root {
     --bg-color: #fff;
     --main-color: #e55472;
     --text-color: #010101;
@@ -20,13 +20,13 @@
     --p-font: 1.3rem;
 }
 
-body{
+body {
     color: var(--text-color);
     background: var(--bg-color);
 }
 
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -41,17 +41,17 @@ header{
     transition: all 0.50s ease;
 }
 
-.logo h2{
+.logo h2 {
     width: 100%;
     height: auto;
     color: var(--text-color);
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
 
-.navbar a{
+.navbar a {
     color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
@@ -59,24 +59,24 @@ header{
     transition: all 0.50s ease;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: var(--main-color);
 }
 
-.h-icons{
+.h-icons {
     display: flex;
     align-items: center;
 }
 
-.h-icons i{
-   font-size: 20px;
-   color: var(--text-color);
-   margin-left: 5px;
-   margin-right: 20px;
-   transition: all 0.50s ease;
+.h-icons i {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all 0.50s ease;
 }
 
-.h-icons i{
+.h-icons i {
     font-size: 25px;
     color: var(--text-color);
     margin-left: 5px;
@@ -84,12 +84,13 @@ header{
     transition: all 0.50s ease;
 }
 
-.h-icons i:hover{
-    transform: translateY(-4px); /*Faz com que os itens subam ao passar o mouse */
+.h-icons i:hover {
+    transform: translateY(-4px);
+    /*Faz com que os itens subam ao passar o mouse */
     color: var(--main-color);
 }
 
-#menu-icon{
+#menu-icon {
     height: 30px;
     width: 30px;
     background-color: var(--text-color);
@@ -103,11 +104,11 @@ header{
     display: none;
 }
 
-section{
+section {
     padding: 60px 14% 70px;
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -119,7 +120,7 @@ section{
     justify-content: flex-start;
 }
 
-.home-text h1{
+.home-text h1 {
     font-family: 'Leckerli One', cursive;
     font-size: var(--big-font);
     color: var(--color2);
@@ -127,14 +128,14 @@ section{
     margin-bottom: 25px;
 }
 
-.home-text p{
+.home-text p {
     color: var(--other-color);
     font-size: var(--p-font);
     line-height: 33px;
     margin-bottom: 60px;
 }
 
-.btn{
+.btn {
     padding: 20px 35px;
     background: var(--main-color);
     color: var(--bg-color);
@@ -145,6 +146,108 @@ section{
     transition: all 0.50s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background: var(--color2);
 }
+
+.title{
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    color: var(--color2);
+}
+
+.title span{
+    background: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100% 7% 50%, 0% 0%);
+    border-radius: 50%;
+}
+
+.new-product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.new-product .box-container .box{
+    flex: 1 1 16rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid gray;
+}
+
+.new-product .box-container .box img{
+    height: 20rem;
+}
+
+.new-product .box-container .box p{
+    position: absolute;
+    top: 32px; 
+    left: 0;
+    height: 30px;
+    width: 60px;
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.2rem 0.2rem;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h4{
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all 0.50s ease;
+}
+
+.box h4:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.box h5{
+    color: var(--other-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+}
+
+ .box .box-btn a{
+    position: absolute;
+    bottom: 84px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background: rgba(58, 57, 57, 0.8);
+    color: var(--bg-color);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.box:hover .box-btn a{
+    opacity: 1;
+} 
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
