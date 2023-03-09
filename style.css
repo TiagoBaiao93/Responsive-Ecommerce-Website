@@ -18,6 +18,7 @@
     --big-font: 5rem;
     --h2-font: 2.3rem;
     --p-font: 1.3rem;
+    --green-color: #31c74a;
 }
 
 body {
@@ -246,8 +247,138 @@ section {
 }
 
 
+.info-items{
+    background-color: #eee9e9c9;
+}
+
+.info-items .title h2{
+    padding-bottom: 38px;
+    
+}
+.info-items .title h2:hover{
+    color: var(--main-color);
+}
+
+.info-product{
+    display: flex;
+   align-items: center;
+}
+
+.info-product .info{
+    text-align: center;
+}
+
+.info-product .info img{
+    display: inline-block;
+}
+
+.info-product .info img:hover {
+    transform: translateY(-4px);
+    /*Faz com que os itens subam ao passar o mouse */
+}
+
+.info-product .info h4{
+    color: var(--green-color);
+}
+
+.info-product .info p{
+    color: var(--other-color);
+    font-weight: 400;
+}
 
 
+.newslleter{
+   height: 628px;
+   background-image: url('Images/Promotions/Background-img.jpg');
+}
+
+.newslleter .contact-newslleter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.newslleter .contact-newslleter h2 {
+    color: #fff;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+
+.newslleter .contact-newslleter p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.form-type{
+    display: flex;
+}
 
+.input-1, .input-2, .input-3, .input-4{
+    display: flex;
+    flex-direction: column;
+}
+.form-type label{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.form-type input{
+    width: 340px;
+    height: 44px;
+    border-radius: 4px;
+    border: none;
+}
+
+.input-1, .input-3{
+    margin-right: 14px;
+}
+
+.terms{
+    display: flex;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.terms p span{
+    color: #ede20e;
+    font-weight: bold;
+}
+
+.form-btn button{
+    width: 690px;
+    height: 44px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: var(--p-font);
+    background-color: rgb(81, 131, 81);
+}
+
+.form-btn button:hover{
+    background-color: rgb(255, 183, 0);
+}
+
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
